@@ -1,0 +1,20 @@
+{
+  "name": "worker-lightning-fs",
+  "version": "0.1.0",
+  "description": "LightningFS run in a WebWorker. Avoids blocking the main thread when run synchronously in WASM.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@isomorphic-git/lightning-fs": "^4.6.0",
+    "ts-pattern": "^4.0.6",
+    "variant-ts": "^0.0.13"
+  }
+}
