@@ -20,7 +20,7 @@ export class FS {
             worker.onerror = (e) => {
                 reject(e)
             };
-            let action = variant<Action>("FileType", "/");
+            let action = variant<Action>("FileType", path);
             worker.postMessage(action);
             return
         })
