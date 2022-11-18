@@ -11,8 +11,8 @@ let run = async (action) => {
     })
         .exhaustive();
 };
-self.onmessage = ({ data: { action } }) => {
-    run(action).then(res => { self.postMessage(res); });
+self.onmessage = ({ data }) => {
+    run(data).then(res => { self.postMessage(res); });
 };
 self.onerror = (e) => {
     self.postMessage({
