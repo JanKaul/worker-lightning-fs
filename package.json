@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "LightningFS run in a WebWorker. Avoids blocking the main thread when run synchronously in WASM.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
